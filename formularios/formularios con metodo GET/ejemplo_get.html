@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de métodos HTTP en PHP</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; }
+        .login-form {
+            max-width: 400px; margin: 50px auto; padding: 20px; background: #fff;
+            border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .txt { width: 95%; padding: 10px; margin: 10px 0; }
+        .boton { background: #007bff; color: white; border: none; padding: 10px; width: 101%; }
+        .boton-reset { background: #ff9800; color: white; border: none; padding: 10px; width: 101%; }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de métodos HTTP (GET) en PHP</h1>
+    <form class="login-form" action="procesar_get.php" method="GET">
+        <p>Nombres: <input class="txt" type="text" name="txt-nombre"></p>
+        <p>Apellidos: <input class="txt" type="text" name="txt-apellido"></p>
+        <p>
+            Semestre:
+            <input type="radio" name="rdo-semestre" value="Primero"> 1°
+            <input type="radio" name="rdo-semestre" value="Tercero"> 3°
+            <input type="radio" name="rdo-semestre" value="Quinto"> 5°
+        </p>
+        <p><input class="boton" type="submit" value="Enviar"></p>
+        <p><input class="boton-reset" type="reset" value="Reset"></p>
+    </form>
+</body>
+</html>
